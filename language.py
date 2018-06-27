@@ -57,3 +57,13 @@ del names[len(names)-1]
 print(names)
 print("Kids: ")
 print(names[1:]) # Skip first give the rest
+print(names[1:-1]) # Skip first and last and give the rest
+print(names.reverse())
+
+for name in names:
+    print("Name is: {0}".format(name))
+
+x = 0
+for index in range(10):
+    x += 10
+    print(x)
