@@ -35,3 +35,25 @@ if no:
     print("no is not false")
 else:
     print("no is false")
+
+if not no:
+    print("You said yes.")
+
+# Ternary
+a = 1
+b = 2
+"bigger" if a > 2 else "smaller"
+
+# List comprehension
+names = ["David", "Sean", "Abel", "Jacob"]
+print(names[0])
+print(names.append("Tia"))
+print(names[len(names) - 1])
+print(names.append("REMOVE"))
+print(names.append("REMOVE"))
+print(names)
+del names[len(names)-1]
+del names[len(names)-1]
+print(names)
+print("Kids: ")
+print(names[1:]) # Skip first give the rest
