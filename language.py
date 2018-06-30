@@ -1,3 +1,5 @@
+from mylib import *
+
 # Functions 
 def add_nums(a,b):
     return a + b
@@ -64,6 +66,33 @@ for name in names:
     print("Name is: {0}".format(name))
 
 x = 0
-for index in range(10):
+for index in range(10): # range takes a value and converts it to a list
     x += 10
     print(x)
+
+# display(a);
+
+def save_file():
+    try:
+        f = open("compass_code.js", "a")
+        # f = open("compass_code.js", "a") # OS does not care if you open it twice
+        f.write("console.log('Hello from Python')\n")
+        f.write("console.log('Python is amazing')\n")
+        f.close()
+    except Exception:
+        print("Could not save file")
+
+save_file()
+
+def read_file():
+    try:
+        f = open("./pnrcreate/pnrCreateMain.js", "r")
+        for codeline in f.readlines():
+            print(codeline)
+        f.close()
+    except Exception:
+        print("Could not read from file")
+
+read_file()
+
+# /Users/v738110/Compass/GitHub/ui/app/Shopping/ShoppingUI/CCShopping/AMD/js/pnrcreate
