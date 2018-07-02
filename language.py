@@ -119,3 +119,22 @@ print(double(2))
 fn = lambda x: x * 2 # Lambda version of double(x)
 
 print(fn(3))
+
+# Classes
+
+# simplest class
+class DoNothing:
+    pass
+
+# class Flight:
+#     number: 124
+#     from: "ORD"
+#     to: "SFO"
+
+# united47 = new Flight()
+
+# print(united47)
+
+nothing = DoNothing()
+
+print(nothing)
