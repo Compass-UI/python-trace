@@ -1,5 +1,7 @@
 from mylib import *
 
+import numpy as np
+
 # Functions 
 def add_nums(a,b):
     return a + b
@@ -72,27 +74,34 @@ for index in range(10): # range takes a value and converts it to a list
 
 # display(a);
 
-def save_file():
-    try:
-        f = open("compass_code.js", "a")
-        # f = open("compass_code.js", "a") # OS does not care if you open it twice
-        f.write("console.log('Hello from Python')\n")
-        f.write("console.log('Python is amazing')\n")
-        f.close()
-    except Exception:
-        print("Could not save file")
+# READING WRITING TO FILES
+# save_file()
 
-save_file()
+# read_file()
 
+# /Users/v738110/Compass/GitHub/ui/app/Shopping/ShoppingUI/CCShopping/AMD/js/pnrcreate
+
+# List in Python is JavaScript array lol!
+
+my_list = [1,2,3,4]
+
+my_array = np.array(my_list)
+
+print(my_array)
+# print(array([1,2,3,4]))
+
+# Generator function
 def read_file():
     try:
         f = open("./pnrcreate/pnrCreateMain.js", "r")
-        for codeline in f.readlines():
+        for codeline in red_lines(f):
             print(codeline)
         f.close()
     except Exception:
         print("Could not read from file")
 
-read_file()
+def red_lines(f):
+    for line in f:
+        yield line
 
-# /Users/v738110/Compass/GitHub/ui/app/Shopping/ShoppingUI/CCShopping/AMD/js/pnrcreate
+read_file()
