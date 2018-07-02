@@ -91,11 +91,14 @@ print(my_array)
 # print(array([1,2,3,4]))
 
 # Generator function
+line_count = 0
 def read_file():
     try:
         f = open("./pnrcreate/pnrCreateMain.js", "r")
         for codeline in red_lines(f):
             print(codeline)
+            print(line_count, ": ***************************************************************")
+            # line_count = line_count + 1
         f.close()
     except Exception:
         print("Could not read from file")
