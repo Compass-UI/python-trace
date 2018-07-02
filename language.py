@@ -107,4 +107,15 @@ def red_lines(f):
     for line in f:
         yield line
 
-read_file()
+# read_file()
+
+# Lambda = functions
+
+def double(x):
+    return x * 2
+
+print(double(2))
+
+fn = lambda x: x * 2 # Lambda version of double(x)
+
+print(fn(3))
