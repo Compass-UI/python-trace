@@ -126,14 +126,19 @@ print(fn(3))
 class DoNothing:
     pass
 
-# class Flight:
-#     number: 124
-#     from: "ORD"
-#     to: "SFO"
+flights = []
+class Flight:
+    def __init__(self, flight_number=47, origin="ORD", to="SFO" ):
+        flight = {"flight_number": flight_number, "from": origin, "to": to}
+        flights.append(flight)
+    def show():
+        print(self.flight_number, self.origin, self.to)
 
-# united47 = new Flight()
 
-# print(united47)
+united47 = Flight()
+
+print(united47)
+# united47.show()
 
 nothing = DoNothing()
 
