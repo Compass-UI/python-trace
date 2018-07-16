@@ -7,15 +7,15 @@ def add_nums(a,b):
     return a + b
 
 # Strings
-print("""Documentation""");
-print("capitalize".capitalize());
-print("hello".replace("e", "a"));
-print("hello".isalpha());
-print("123".isdigit()); #Check before converting
-print("some, cvs, values".split(","));
+print("""Documentation""")
+print("capitalize".capitalize())
+print("hello".replace("e", "a"))
+print("hello".isalpha())
+print("123".isdigit()) #Check before converting
+print("some, cvs, values".split(","))
 name = "David"
 message = "Hello"
-print("{1} {0}".format(name, message));
+print("{1} {0}".format(name, message))
 true = True
 false = False
 print(int(true))
